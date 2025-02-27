@@ -13,7 +13,7 @@ local Player = game:GetService("Players").LocalPlayer
 local PlayerGui = Player:FindFirstChild("PlayerGui") or Instance.new("ScreenGui", Player)
 
 -- Key criptografada
-local encodedKey = "RGVrMjAyNQ==" -- "Dek2025" codificado em Base64
+local encodedKey = "RGVrMjAyNQ==" 
 local function decodeKey(encoded)
     local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
     encoded = string.gsub(encoded, "[^"..b.."=]", "")
